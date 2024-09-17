@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-image: url('https://i.pinimg.com/originals/ac/54/a1/ac54a128942c750799c2c1fe144d2467.jpg'); /* Update with the actual path to your image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-position: center center; /* Centers the image */
+    color: #2f4f4f;
+    height: 100vh; /* Ensures the background covers the whole viewport */
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    margin-top:30px;
+    margin-left:700px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Allows us to shift the container */
+    left: 50px; /* Shifts the container 50px to the right */
+}
+
+
+h1 {
+    font-size: 2.5em;
+    color: #9063CD;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.todo-input input {
+    width: 70%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.todo-input button {
+    width: 25%;
+    padding: 10px;
+    background-color: plum;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.todo-input button:hover {
+    background-color: grey;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+ul li.completed {
+    text-decoration: line-through;
+    background-color: lavender;
+    border-color: #a2d5ab;
+}
+
+ul li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#congratulations {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: darkgray;
+}
+
+#congratulations:hover {
+    color: darkgray;
+}
